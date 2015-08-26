@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<ImageView
+    android:layout_width="@dimen/abc_action_button_min_width_material"
+    android:layout_height="@dimen/abc_action_bar_default_height_material"
+    android:id="@+id/imageView"
+    android:src="@android:drawable/ic_menu_delete"
+    android:visibility="gone"
+    android:background="@color/start_Sliding"
+    />
+<LinearLayout
+    android:id="@+id/item"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/abc_action_bar_default_height_material"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:gravity="bottom">
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TITLE"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/abc_action_bar_default_padding_material"
+        >
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="TIME"
+            android:editable="false" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="15dp"
+            android:text="DATE"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/_id"
+            android:visibility="invisible"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minutes"
+            android:visibility="visible"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout><!-- From: file:/D:/Android/AndroidStudioProjects/Alpha/app/src/main/res/layout/item_layout.xml -->

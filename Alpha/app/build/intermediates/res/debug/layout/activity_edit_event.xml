@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/abc_config_prefDialogWidth"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/edit_title_mod"
+        android:visibility="invisible"
+        android:text="@string/event_title"
+        android:inputType="text"
+        android:textColor="#ffa8d9c9"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="bottom" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/edit_title"
+        android:onClick="debug_1"
+        android:text="@string/event_title"
+        android:textColor="@color/title_color"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="bottom" />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="5dp">
+    <TextView
+        android:id="@+id/edit_time"
+        android:onClick="time_clicked"
+        android:clickable="false"
+        android:text="12:00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text_color"
+        android:layout_weight="0.5"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:padding="5dp"
+        android:id="@+id/edit_date"
+        android:clickable="false"
+        android:onClick="date_clicked"
+        android:text="01-01-1971"
+        android:layout_margin="5dp"
+        android:textColor="@color/text_color"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:layout_gravity="center" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarStyle"
+        android:baselineAligned="true"
+        android:measureWithLargestChild="true"
+        android:background="#6d36d1df">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="@string/delete"
+            android:id="@+id/left_butt"
+            android:onClick="left_button_clicked"
+            style="?android:attr/buttonBarButtonStyle"
+            android:enabled="true"
+            android:clickable="true"
+            android:layout_weight="0.5"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#ff176b8e"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+        <Button
+            android:layout_width="50pt"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:text="@string/edit"
+            android:id="@+id/right_butt"
+            android:onClick="right_button_clicked"
+            style="?android:attr/buttonBarButtonStyle"
+            android:enabled="true"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#ff176b8e"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</LinearLayout>
+<!-- From: file:/D:/Android/AndroidStudioProjects/Alpha/app/src/main/res/layout/activity_edit_event.xml -->

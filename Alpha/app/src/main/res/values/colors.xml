@@ -1,0 +1,13 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="button_color">#ff17688e</color>
+    <color name="text_color">#ff3794cb</color>
+    <color name="title_color">#ff1e5d87</color>
+    <color name="start_Sliding">#ffe74d3b</color>
+    <color name="item_text">#fffff4f0</color>
+    <color name="pervenche">#ff5787c8</color>
+    <color name="watchet">#ffaed6d8</color>
+    <color name="verditer">#ff6cc69e</color>
+
+</resources>
